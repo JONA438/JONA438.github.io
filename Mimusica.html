@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Musica </title>
+
+	<link rel="stylesheet" type="text/css" href="Mimusica(CSS).css">
+</head>
+<body>
+	<nav class="navegator">
+		<a href="Videitos.html">
+			<img src="imagenes/username-icon.png" width="50px" height="50px">
+			<p> Videos </p> 
+		</a>
+
+		<a href="Anecdotas.html">
+			<img src="imagenes/codes.png" width="50px" height="50px">
+			<p> Anécdotas </p> 
+		</a>
+
+		<a href="index.html"> 
+			<img src="https://cdn.icon-icons.com/icons2/1744/PNG/512/3643769-building-home-house-main-menu-start_113416.png" width="50px" height="50px">
+			<p> Inicio </p>
+		</a>
+	</nav>
+	<section class="parrafo">
+		Aquí estan dos generos musicales que me gustan mucho y que uso al momento de programar, por una parte esta la musica clasica, que esa la pongo cuando estoy muy estresado y no me sale algo en el codigo jaja suele pasar, y el otro genero musical es la electronica, me gusta mucho y siempre la pongo cuando estoy feliz o cuando me estan saliendo bien las cosas, ademas de que me gusta mucho como conecta la musica al momento de hacer codigos te da más emocion jajaja y a mi me pasa que a veces dejaba todo al ultimo y siempre estaba a las carreras, porque el niño no hacía su tarea antes jaja.
+	</section>
+
+	<article class="Principal">
+		<audio id="Classic" src="Sounds/Clasicas.mp3" preload> </audio>
+		<section>
+			<img src="https://www.kope.es/fotos/musicarelajante.jpg">
+			<p class="play pointer" onclick="playAudio()">
+				PLAY 
+			</p>
+			<p class="Stop pointer" onclick="pauseAudio()"> Pause </p>
+		</section>
+
+		<audio id="Environmental" src="Sounds/Ambiental.mp3" preload> </audio>
+		<section>
+			<img src="https://www.infobae.com/new-resizer/9YHDcl_ccGN4xP1xZqJ1IG2Ts_o=/750x0/filters:quality(100)/arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/MCUNMMATHRAQHK5KTTVESPWTK4.jpg">
+			<p class="play pointer" onclick="playAudio2()">
+				PLAY 
+			</p>
+			<p class="Stop pointer" onclick="pauseAudio2()"> Pause </p>
+		</section>
+	</article>
+
+	<script type="text/javascript">
+		var x = document.getElementById("Classic");
+		function playAudio() {
+		  x.play();
+		}
+
+		function pauseAudio() {
+		  x.pause();
+		}
+
+		var y = document.getElementById("Environmental");
+		function playAudio2() {
+		  y.play();
+		}
+
+		function pauseAudio2() {
+		  y.pause();
+		}
+	</script>
+
+	
+</body>
+</html>
